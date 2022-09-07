@@ -1,0 +1,162 @@
+.todo__desk {
+    width: 350px;
+    height: 500px;
+    background-color: #a9bfe2;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    opacity: .8;
+}
+
+.progress__desk {
+    border: 4px solid #edf1f2;
+    background-color: #94bcdc;
+    width: 350px;
+    height: 500px;
+    border-radius: 5px;
+    overflow: scroll;
+    opacity: .8;
+}
+
+.done__desk {
+    width: 350px;
+    height: 500px;
+    background-color: #aed2e2;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    opacity: .8;
+}
+
+.todo__desk-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    border-bottom: 5px solid #292a2b;
+    color: #222528;
+    margin-bottom: 5px;
+}
+
+.todo__desk-title {
+    letter-spacing: 3px;
+    padding-left: 10px;
+}
+
+.todo__desk-count {
+    padding-right: 10px;
+}
+
+.todo__desk-button {
+    border: none;
+    background-color: #0b0c0c;
+    width: 100%;
+    height: 45px;
+    overflow: hidden;
+    cursor: pointer;
+    color: #eaf0f3;
+    letter-spacing: 5px;
+    font-size: 18px;
+    font-weight: 500px;
+}
+
+.progress__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    border-bottom: 5px solid #292a2b;
+    color: #222528;
+    margin-bottom: 5px;
+}
+
+.progress__desk-title {
+    letter-spacing: 3px;
+    padding-left: 10px;
+}
+
+.progress__desk-count {
+    padding-right: 10px;
+}
+
+.done__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    border-bottom: 5px solid #292a2b;
+    color: #222528;
+    margin-bottom: 5px;
+}
+
+.done__desk-title {
+    letter-spacing: 3px;
+    padding-left: 10px;
+}
+
+.done__desk-count {
+    padding-right: 10px;
+}
+
+.done__desk-button {
+    border: none;
+    width: 100%;
+    height: 45px;
+    overflow: hidden;
+    cursor: pointer;
+    color:#f3f7f9;
+    letter-spacing: 5px;
+    font-size: 18px;
+    font-weight: 500px;
+    background-color: #0b0c0c;
+}
+
+.todo__desk-button:hover {
+    opacity: 70%;
+}
+
+.done__desk-button:hover {
+    opacity: 70%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid #edf1f2;
+    border-radius: 5px;
+    height: 500px;
+}
+
+@media (max-width: 1200px) {
+    .todo__desk,
+    .progress__desk,
+    .done__desk {
+        width:300px;
+    }
+    .todo__desk-title,
+    .progress__desk-title,
+    .done__desk-title {
+        font-size: 16px;
+    }
+    .wrapper {
+    margin-left: 10px;
+    margin-right: 10px;
+    }
+}
+
+@media (max-width: 900px) {
+    .todo__desk,
+    .progress__desk,
+    .done__desk {
+        width:300px;
+    }
+    .todo__desk-title,
+    .progress__desk-title,
+    .done__desk-title {
+        font-size: 16px;
+    }
+    .wrapper {
+    margin-left: 10px;
+    margin-right: 10px;
+    }
+}

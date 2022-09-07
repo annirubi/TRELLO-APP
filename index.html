@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>TRELLO APP</title>
+    <link rel="stylesheet" href="styles/index.css" />
+    <script src="app/index.js" type="module" defer></script>
+  </head>
+  <body>
+    <div class="root" data-root>
+      <header class="header">
+        <div class="header__container">
+          <h3 class="header__title">TRELLO BOARD</h3>
+          <h4 class="header__user" data-header-user>Anna</h4>
+        </div>
+        <img alt="avatar" class="header__avatar" data-header-avatar />
+        <div class="header__clock" data-clock></div>
+      </header>
+
+      <div class="container">
+        <div class="wrapper">
+          <div class="todo__desk">
+            <header class="todo__desk-header">
+              <h2 class="todo__desk-title">TODO</h2>
+              <div class="todo__desk-count" data-todo-desk-count>0</div>
+            </header>
+            <div class="todo__desk-content" data-todo-desk-content></div>
+          </div>
+          <div class="todo__btn-flex">
+            <button class="todo__desk-button" data-btn-add>ADD TODO</button>
+          </div>
+        </div>
+
+        <div class="progress__desk">
+          <header class="progress__header">
+            <h2 class="progress__desk-title">IN PROGRESS</h2>
+            <div class="progress__desk-count" data-progress-desk-count>0</div>
+          </header>
+          <div class="progress__desk-content" data-progress-desk-content></div>
+        </div>
+
+        <div class="wrapper">
+          <div class="done__desk">
+            <header class="done__header">
+              <h2 class="done__desk-title">DONE</h2>
+              <div class="done__desk-count" data-done-desk-count>0</div>
+            </header>
+            <div class="done__desk-content" data-done-desk-content></div>
+          </div>
+          <button class="done__desk-button" data-btn-remove-all>DELETE ALL</button>
+        </div>
+      </div>
+    </div>
+
+    <template data-create-template>
+      <div class="todo" data-todo>
+        <div class="todo__header" data-todo-header>
+          <span class="todo__title" data-todo-title>Title</span>
+          <button class="todo__btn-edit" data-todo-btn-edit>edit</button>
+          <button class="todo__btn-remove" data-todo-btn-remove>remove</button>
+        </div>
+        <div class="todo__desc" data-todo-desc>
+          <span class="todo__desc-content" data-todo-desc-content>Description</span>
+          <button class="todo__btn-move" data-todo-btn-move>➡</button>
+        </div>
+        <div class="todo__info">
+          <div class="todo__user" data-todo-user>User</div>
+          <div class="todo__date" data-todo-date></div>
+        </div>
+      </div>
+    </template>
+
+    <template data-progress-template>
+      <div class="todo todo--in-progress" data-todo>
+        <div class="todo__header" data-todo-header>
+          <span class="todo__title" data-todo-title>Title</span>
+          <button class="todo__btn-edit" data-todo-btn-back>back</button>
+          <button class="todo__btn-remove" data-todo-btn-remove>remove</button>
+        </div>
+        <div class="todo__desc" data-todo-desc>
+          <span class="todo__desc-content" data-todo-desc-content>Description</span>
+          <button class="todo__btn-move" data-todo-btn-move>➡</button>
+        </div>
+        <div class="todo__info">
+          <div class="todo__user" data-todo-user>User</div>
+          <div class="todo__date" data-todo-date></div>
+        </div>
+      </div>
+    </template>
+
+    <template data-done-template>
+      <div class="todo todo--done" data-todo>
+        <div class="todo__header" data-todo-header>
+          <span class="todo__title" data-todo-title>Title</span>
+          <button
+            class="todo__btn-remove btn--remove-done" data-todo-btn-remove>remove</button>
+        </div>
+        <div class="todo__desc" data-todo-desc>
+          <span class="todo__desc-content" data-todo-desc-content>Description</span>
+        </div>
+        <div class="todo__info">
+          <div class="todo__user" data-todo-user>User</div>
+          <div class="todo__date" data-todo-date></div>
+        </div>
+      </div>
+    </template>
+  </body>
+</html>

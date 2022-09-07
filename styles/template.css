@@ -1,0 +1,98 @@
+.todo {
+    border-top: 3px solid rgb(248, 248, 251);
+    border-bottom: 3px solid rgb(248, 248, 251);
+    padding: .8em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-bottom: 10px;
+}
+
+.todo__header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+}
+
+.todo__title {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.todo__btn-edit,
+.todo__btn-back {
+    margin-left: auto;
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 70px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.todo__btn-edit:hover,
+.todo__btn-back:hover {
+    opacity: .7;
+    background-color: rgb(154, 189, 240);
+}
+
+.todo__btn-remove {
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 70px;
+    height: 20px;
+    cursor: pointer;
+}
+.todo__btn-remove:hover {
+    opacity: .7;
+    background-color: rgb(154, 189, 240);
+}
+.btn--remove-done {
+    margin-left: auto;
+}
+
+.todo__desc {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo__btn-move {
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 60px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.todo__btn-move:hover {
+    opacity: .7;
+    background-color: rgb(154, 189, 240);
+}
+
+.todo__info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.todo__user,
+.todo__date {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    .todo__title {
+        font-size: 16px;
+    }
+    .todo__desc {
+        font-size: 15px;
+    }
+    .todo__user,
+    .todo__date {
+        font-size: 12px;
+    }
+}
+

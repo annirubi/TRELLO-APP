@@ -1,0 +1,71 @@
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    background-color: #0606067c;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal--toggle {
+    display: flex;
+}
+
+.error {
+    font-size: 16px;
+    color: rgb(243, 119, 119);
+}
+
+.error p {
+    max-width: 900px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e8ecef;
+    text-align: center;
+    padding: 15px;
+}
+
+.modal__warning {
+    
+    padding: 5px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #d1e5f9;
+    color: rgb(16, 16, 16);
+    font-size: 18px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.new-todo__buttons,
+.modal__warning-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.warning-buttons__cancel,
+.warning-buttons__confirm {
+    padding: 10px 20px;
+    border: none;
+    font-size: 12px;
+    background-color: rgb(241, 126, 126);
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 8px;
+}
+
+.warning-buttons__confirm {
+    background-color: #8aa8ee;
+    margin-left: 20px;
+}
+
+.warning-buttons__cancel:hover,
+.warning-buttons__confirm:hover {
+    opacity: .7;
+}
+

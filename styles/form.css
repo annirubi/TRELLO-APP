@@ -1,0 +1,58 @@
+.modal__new-todo,
+.user-selection {
+    width: min(450px, 90%);
+    border-radius: 5px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    background-color: #d1e5f9;;
+    opacity: .9;
+    text-align: center;
+}
+
+.new-todo__header {
+    margin: 0;
+}
+
+.new-todo__title {
+    padding: .5em;
+    font-size: 18px;
+}
+
+.new-todo__description {
+    padding: .5em;
+    font-size: 16px;
+    resize: none;
+}
+
+.new-todo__buttons {
+    display: flex;
+    justify-content: center;
+    column-gap: 60px;
+}
+
+.new-todo__cancel,
+.new-todo__add {
+    padding: 0.5em 2em;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: rgb(241, 126, 126);
+    cursor: pointer;
+}
+
+.new-todo__add {
+    background-color:  #8aa8ee;
+}
+
+.new-todo__cancel:hover,
+.new-todo__add:hover {
+    opacity: .8;
+}
+
+.user-selection {
+    height: 150px;
+    justify-content: flex-start;
+}
