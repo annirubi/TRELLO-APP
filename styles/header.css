@@ -5,7 +5,7 @@
 body {
     margin: 0;
     font-family: 'Nunito', sans-serif;
-    background: url('/assets/nasa-Q1p7bh3SHj8-unsplash.jpg') center/cover no-repeat;
+    background: url('../assets/nasa-Q1p7bh3SHj8-unsplash.jpg') center/cover no-repeat;
 }
 
 .header {
